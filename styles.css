@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(221, 221, 221);
+    display: flex;
+}
+
+.calc{
+    width: 30vw;
+    height: 80vh;
+    margin: auto;
+    display: grid;
+    background-color: rgb(175, 175, 175);
+    border: 5px solid rgb(224, 224, 224);
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 4px 4px 10px 2px rgb(55, 55, 55);
+
+}
+
+.calc>div:nth-child(1){
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: none;
+    background-color: rgb(77, 77, 77);
+    border-radius: 15px;
+    border-top-right-radius: 11px;
+    border-top-left-radius: 11px;
+}
+#display{
+    border: none;
+    color: white;
+    font-size: 3em;
+    padding: 2px;
+    padding-right: 4px;
+}
+.calc>div:nth-child(18){
+    grid-column-start: 2;
+}
+.items{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.items:active{
+    background-color: hsl(0, 0%, 65%);
+}
+.item{
+    cursor: pointer;
+    padding: 30px 34px;
+    font-size: 1.3em;
+}
+#allClear{
+    padding: 32px 27px;
+}
